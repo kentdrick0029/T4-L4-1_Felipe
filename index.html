@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication Simulation</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>User Authentication</h2>
+        <form id="auth-form">
+            <label for="role">Role:</label>
+            <select id="role" name="role" required>
+                <option value="Department Head">Department Head</option>
+                <option value="Faculty">Faculty</option>
+                <option value="Student Officer">Student Officer</option>
+                <option value="Student">Student</option>
+            </select>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Authenticate</button>
+        </form>
+        <div id="output"></div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
